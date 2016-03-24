@@ -1,0 +1,25 @@
+# Check! Back-end
+##A Project & Task Management tool, RESTful API Back-end + ReactJS Front-end client.
+
+###Info:
+
+Check! is a Project & Task Management tool build during my traineeship at [Codaisseur](http://codaisseur.com).
+
+The test driven (TDD), RESTful API [Back-end](https://github.com/khalilgharbaoui/check-taskmanager-back-end) is made in Rails serving a JSON format.
+It utilizes Puma for HTTP Concurrency and CORS middleware, that allows it to have cross domain AJAX calls with the ReactJS [Front-end](https://github.com/khalilgharbaoui/check-taskmanager-front-end) client, the HTTP requests are preformed asynchronously trough jQuery AJAX.
+Checkout the live demo's here: front-end-demo | back-end-demo
+
+### Team
+
+- [Khalil Gharbaoui](https://github.com/khalilgharbaoui)
+- [Matthew LaPorte](https://github.com/ml7757)
+- [Mauricio Garcia](https://github.com/MauricioGarc1a)
+- [Iris Bune](https://github.com/irisbune)
+
+
+
+### Todos
+
+- Add user authentication.
+- Add roles.
+- Add e-mail functionality.
