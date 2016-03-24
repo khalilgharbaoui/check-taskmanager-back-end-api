@@ -5,7 +5,7 @@
 
 Check! is a Project & Task Management tool build during my traineeship at [Codaisseur](http://codaisseur.com).
 
-The test driven (TDD), RESTful API [Back-end](https://github.com/khalilgharbaoui/check-taskmanager-back-end) is made in Rails serving a JSON format.
+The test driven (TDD), RESTful API [Back-end](https://github.com/khalilgharbaoui/check-taskmanager-back-end-api) is made in Rails serving a JSON format.
 It utilizes Puma for HTTP Concurrency and CORS middleware, that allows it to have cross domain AJAX calls with the ReactJS [Front-end](https://github.com/khalilgharbaoui/check-taskmanager-front-end) client, the HTTP requests are preformed asynchronously trough jQuery AJAX.
 Checkout the live demo's here: front-end-demo | back-end-demo
 
