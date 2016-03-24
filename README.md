@@ -23,3 +23,26 @@ Checkout the live demo's here: front-end-demo | back-end-demo
 - Add user authentication.
 - Add roles.
 - Add e-mail functionality.
+
+### Installation:
+
+Download both the Front-end and Back-end and run the following commands for both of them:
+
+Front-end commands:
+
+  ```bash
+  npm install
+  npm start
+  open http://localhost:3001
+  ```
+
+Back-end commands:
+
+  ```bash
+  bundle install
+  rails server
+  open http://localhost:3000
+  ```
+
+
+![alt tag](https://raw.githubusercontent.com/khalilgharbaoui/check-taskmanager-back-end/master/checktaskmanager.png)
