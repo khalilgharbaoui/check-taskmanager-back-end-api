@@ -45,4 +45,4 @@ Back-end commands:
   ```
 
 
-![alt tag](https://raw.githubusercontent.com/khalilgharbaoui/check-taskmanager-back-end/master/checktaskmanager.png)
+![alt tag](https://raw.githubusercontent.com/khalilgharbaoui/check-taskmanager-back-end-api/master/checktaskmanager.png)
