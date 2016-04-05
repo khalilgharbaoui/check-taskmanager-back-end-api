@@ -1,0 +1,24 @@
+sudo: false
+language: ruby
+cache:
+  directories:
+  - vendor/bundle
+rvm:
+- 2.1.5
+addons:
+  code_climate:
+    repo_token: b86a6d860282be19c2aab7bbe6408f5c147f3b87a3ef586ebb28e32f4d6f08a1
+    postgresql: '9.3'
+before_script:
+- cp config/database.travis.yml config/database.yml
+- RAILS_ENV=test bundle exec rake db:drop db:create db:migrate
+script:
+- bundle exec rspec spec
+deploy:
+  provider: heroku
+  api_key:
+    secure: nGMyK4vzFUCy9kKQqJThjHwU9uffToL4P/GfHNx77KUsCof3/covJD/tOAIzCTxwuhVRs+9DPDalbpI4i8qAl9NL+wMfSeAP7nohd94Uh+Ui66chHRQTgPn1cFNggQDxl1alHtVfjx7+xvTDf2AVz9B7nOSuNd4TspjAXfqnJjuoWmMn0d6dro95pgrnu69SBacfruAQdlvBmGKsJgtsewwnhNrZetzA35Btq48/L3ttLyllP9vCGl0aljqHfI2ftd69WUtN0mdfuGmL12m04ntExYPpMO7KxeSPBzfzHsYyTJvAhKKY8duYmImPRqqY75KSQBrYHK3LKxID5z+LWX/l3lxYD8UDPfnHTsdcw3HWd2iJqKdq+Y93gVWRXLvQy73OKhr44ahiRviu1l5bKRD0/avPLQXGYGJ/QhyZ0Yp18N4FhYH7CR5i0Q38K3NkX4brto+hU7UBppN4cwahMsoUH1Uh/EtJzRmu4GALOcSx/1zJreKqJMfC/OXnA2BWvr1kDECQF2a0K6r7w1IVRJCc1sJwzz8djexebcYc/L5t4Nnv/uayFGGfAX4MNzwkwcxjbfIkx5MSZsCOJphxzejyqCDATN9c4rFUVR51iSyFtGxSiQ9W/Slrb+3Pps/eYjIz5AoIcH3q2+2IQZucs/OM407wD2ik1YOp2Zah5Mg=
+  app: checktaskmanager
+  on:
+    repo: khalilgharbaoui/check-taskmanager-back-end-api
+    
