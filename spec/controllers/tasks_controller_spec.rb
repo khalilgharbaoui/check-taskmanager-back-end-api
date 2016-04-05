@@ -2,7 +2,7 @@ require 'rails_helper'
 
 
 RSpec.describe TasksController, type: :controller do
-  let!(:a_task) {Task.create! valid_attributes}
+  let!(:task) {Task.create! valid_attributes}
 
   # fixins:
   let(:valid_attributes) do
@@ -22,22 +22,22 @@ RSpec.describe TasksController, type: :controller do
   #
   #
 
-  describe "GET #index" do
-    it "gives a JSON of all tasks" do
-      get :index, format: :json
-    end
-  end
+  # describe "GET #index" do
+  #   it "gives a JSON of all tasks" do
+  #     get :index, format: :json
+  #   end
+  # end
 
 
-  describe "#create" do
-    context "with valid params" do
-      it "creates a new Task" do
-          expect {
-            post :create, {task: valid_attributes}
-          }.to change(Task, :count).by(1)
-      end
-    end
-  end
+  # describe "#create" do
+  #   context "with valid params" do
+  #     it "creates a new Task" do
+  #         expect {
+  #           post :create, {task: valid_attributes}
+  #         }.to change(Task, :count).by(1)
+  #     end
+  #   end
+  # end
 
 
 

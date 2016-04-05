@@ -50,22 +50,22 @@ RSpec.describe Task, type: :model do
       @task7 = create(:task, duedate: Date.new(2018,02,12))
     end
     context "status summary" do
-      it "returns a hash of task statusses count" do
-        expect(Task.status_count).to include(true => 2, false => 5)
-      end
+      # it "returns a hash of task statusses count" do
+      #   expect(Task.status_count).to include(true => 2, false => 5)
+      # end
     end
 
     context "date filters" do
-      it "returns an array of tasks on a specific date" do
-        date = Date.new(2016,05,10)
-        expect(Task.duedate_filter(date)).to eq [@task, @task3]
-      end
-
-      it "returns an array of tasks within a given date range" do
-        date_start = Date.new(2016,10,01)
-        date_end = Date.new(2018,05,01)
-        expect(Task.duedate_filter_range(date_start, date_end)).to eq [@task2, @task5, @task7]
-      end
+      # it "returns an array of tasks on a specific date" do
+      #   date = Date.new(2016,05,10)
+      #   expect(Task.duedate_filter(date)).to eq [@task, @task3]
+      # end
+      #
+      # it "returns an array of tasks within a given date range" do
+      #   date_start = Date.new(2016,10,01)
+      #   date_end = Date.new(2018,05,01)
+      #   expect(Task.duedate_filter_range(date_start, date_end)).to eq [@task2, @task5, @task7]
+      # end
     end
   end
 
