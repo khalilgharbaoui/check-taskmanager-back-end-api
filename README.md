@@ -1,4 +1,4 @@
-# Check! Back-end
+# Check! Back-end [![Build Status](https://travis-ci.org/khalilgharbaoui/check-taskmanager-back-end-api.svg?branch=master)](https://travis-ci.org/khalilgharbaoui/check-taskmanager-back-end-api) [![Code Climate](https://codeclimate.com/github/khalilgharbaoui/check-taskmanager-back-end-api/badges/gpa.svg)](https://codeclimate.com/github/khalilgharbaoui/check-taskmanager-back-end-api) [![Test Coverage](https://codeclimate.com/github/khalilgharbaoui/check-taskmanager-back-end-api/badges/coverage.svg)](https://codeclimate.com/github/khalilgharbaoui/check-taskmanager-back-end-api/coverage) [![Issue Count](https://codeclimate.com/github/khalilgharbaoui/check-taskmanager-back-end-api/badges/issue_count.svg)](https://codeclimate.com/github/khalilgharbaoui/check-taskmanager-back-end-api)
 ##A Project & Task Management tool, RESTful API Back-end + ReactJS Front-end client.
 
 ###Info:
